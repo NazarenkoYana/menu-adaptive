@@ -4,4 +4,4 @@
 - "em" is also used,which allows you to quickly resize all content without distortion.
 
 # DEMO
-[LIVE DEMO](https://nazarenkoyana.github.io/adaptive-menu/dist/index.html)
+[LIVE DEMO](https://nazarenkoyana.github.io/menu-adaptive/dist/index.html)
