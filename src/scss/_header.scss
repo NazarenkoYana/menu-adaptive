@@ -1,0 +1,224 @@
+@import "helpers";
+
+$browser-context: 13px;
+$menuColor: #262626;
+
+header {
+  border-color: #fff;
+  font-size: $browser-context;
+
+  .header-content-wrapper {
+    max-width: 1600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto
+  }
+
+  .header-wrapper-left-side {
+    display: flex;
+
+    .header-logo {
+      position: relative;
+
+      a {
+        display: block;
+        padding: em(16px) em(30px) em(15px) em(12px);
+
+        img {
+          height: em(23px);
+        }
+
+        &:focus {
+          outline: em(1px) dashed $menuColor;
+        }
+      }
+
+      &:after {
+        display: block;
+        border-left: em(2px) solid #000;
+        height: em(24px);
+        width: em(2px);
+        content: " ";
+        position: absolute;
+        top: em(16px);
+        right: 0;
+      }
+    }
+  }
+
+  .header-menu {
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      li {
+        list-style-type: none;
+        position: relative;
+        color: $menuColor;
+        white-space: nowrap;
+
+        a {
+          display: block;
+          padding: em(16px) em(8px);
+          margin-top: em(1px);
+
+          span {
+            font-size: $browser-context;
+            border-bottom: em(2px) solid transparent;
+          }
+
+          &:focus {
+            outline: em(1px) dashed $menuColor;
+            background-color: #f2f2f2;
+          }
+        }
+
+        &:hover a span {
+          border-color: $menuColor;
+        }
+
+        &.active a {
+          padding: em(12px) em(6px) em(16px) em(30px);
+
+          span {
+            font-size: 18px;
+            font-weight: 600;
+          }
+        }
+
+        &.with-icon {
+
+          a {
+            padding-left: em(16px);
+            padding-right: em(16px);
+          }
+
+          i.icon {
+            font-size: em(8px);
+            padding-left: em(7px);
+          }
+
+          &.large-icon {
+            i.icon {
+              position: relative;
+              top: 3px;
+              font-weight: 300;
+              font-size: em(16px);
+              line-height: em(13px, 16px);
+            }
+          }
+        }
+
+        &.with-img {
+          position: relative;
+
+          a {
+            padding-right: em(48px);
+          }
+
+          img {
+            display: inline-block;
+            width: em(32px);
+            height: em(32px);
+            margin-left: em(8px);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(1190px) {
+    ul li.more {
+      display: none;
+    }
+  }
+  @include media-breakpoint-up(1395px) {
+    ul li.new-btn {
+      display: none;
+    }
+  }
+  @include media-breakpoint-down(1395px) {
+    ul li.hide-span-icon a span,
+    ul li.hide-span-cart a span,
+    ul li.hide-span-search a span {
+      display: none;
+    }
+    ul li.new-btn {
+      display: none;
+    }
+  }
+  @include media-breakpoint-down(1190px) {
+    ul li.hide-first {
+      display: none;
+    }
+
+    ul li.more {
+      display: block;
+    }
+
+  }
+  @include media-breakpoint-down(1032px) {
+    ul li.hide-second {
+      display: none;
+    }
+  }
+  @include media-breakpoint-down(930px) {
+    ul li.hide-third {
+      display: none;
+    }
+  }
+  @include media-breakpoint-down(859px) {
+    height: 54px;
+    border-bottom: 1px solid #e6e6e6;
+
+    ul li.hide-span-microsoft {
+      display: none;
+    }
+    ul li.hide-span-computers {
+      display: none;
+    }
+    ul li.active {
+      display: none;
+    }
+    .header-wrapper-left-side .header-logo:after {
+      & {
+        display: none;
+      }
+    }
+    .header-logo {
+      position: absolute !important;
+      left: calc(100% - 50% - 54px);
+      top: 0;
+    }
+    ul li.hide-span-search {
+      position: absolute !important;
+      top: 0;
+      left: 48px;
+    }
+    ul li.hide-span-icon {
+      position: absolute !important;
+      top: 8px;
+      right: 0;
+    }
+    ul li.hide-span-cart {
+      position: absolute !important;
+      top: 0;
+      right: 48px;
+    }
+    ul li.new-btn {
+      display: block;
+      position: absolute !important;
+      top: 0;
+      left: 0;
+    }
+    ul li.more {
+      display: none;
+    }
+  }
+}

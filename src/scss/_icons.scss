@@ -1,0 +1,33 @@
+.icon {
+  font-family: "MWF-MDL2";
+  display: inline-block;
+  font-weight: 700;
+  vertical-align: center;
+  font-style: normal;
+
+  &.dropdown {
+    &:before {
+      content: "";
+    }
+  }
+
+  &.search {
+    &:before {
+      content: "";
+    }
+  }
+
+  &.cart {
+    &:before {
+      content: "";
+    }
+  }
+
+  &.new-btn-icon {
+    &:before {
+      content: "";
+      font-size: 20px;
+      padding: 16px;
+    }
+  }
+}
