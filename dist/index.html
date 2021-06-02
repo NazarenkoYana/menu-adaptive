@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Softevol test</title>
+    <link rel="stylesheet"
+          href="https://www.microsoft.com/mwf/css/MWF_20200416_22921869/west-european/store-web-default/actionmenu/alert/ambientvideo/areaheading/autosuggest/badge/banner/button/carouselbase/contentplacement/contentplacementitem/contentrichblock/contenttoggle/dialog/divider/feature/featuregroup/flyout/glyph/heading/heroitem/highlightfeature/hyperlinkgroup/image/linknavigation/list/mediagallery/mosaic/mosaicplacement/multislidecarousel/pagebehaviors/paragraph/pivot/select/selectbutton/selectmenu/singleslidecarousel/skiptomain/slider/systemrequirements/table?apiVersion=1.0&include_base=true">
+    <style>header {
+        border-color: #fff;
+        font-size: 13px
+    }
+
+    header .header-content-wrapper {
+        max-width: 1600px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto
+    }
+
+    header .header-wrapper-left-side {
+        display: flex
+    }
+
+    header .header-wrapper-left-side .header-logo {
+        position: relative
+    }
+
+    header .header-wrapper-left-side .header-logo a {
+        display: block;
+        padding: 1.2307692308em 2.3076923077em 1.1538461538em 0.9230769231em
+    }
+
+    header .header-wrapper-left-side .header-logo a img {
+        height: 1.7692307692em
+    }
+
+    header .header-wrapper-left-side .header-logo a:focus {
+        outline: 0.0769230769em dashed #262626
+    }
+
+    header .header-wrapper-left-side .header-logo:after {
+        display: block;
+        border-left: 0.1538461538em solid #000;
+        height: 1.8461538462em;
+        width: 0.1538461538em;
+        content: " ";
+        position: absolute;
+        top: 1.2307692308em;
+        right: 0
+    }
+
+    header .header-menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between
+    }
+
+    header .header-menu ul li {
+        list-style-type: none;
+        position: relative;
+        color: #262626;
+        white-space: nowrap
+    }
+
+    header .header-menu ul li a {
+        display: block;
+        padding: 1.2307692308em 0.6153846154em;
+        margin-top: 0.0769230769em
+    }
+
+    header .header-menu ul li a span {
+        font-size: 13px;
+        border-bottom: 0.1538461538em solid transparent
+    }
+
+    header .header-menu ul li a:focus {
+        outline: 0.0769230769em dashed #262626;
+        background-color: #f2f2f2
+    }
+
+    header .header-menu ul li:hover a span {
+        border-color: #262626
+    }
+
+    header .header-menu ul li.active a {
+        padding: 0.9230769231em 0.4615384615em 1.2307692308em 2.3076923077em
+    }
+
+    header .header-menu ul li.active a span {
+        font-size: 18px;
+        font-weight: 600
+    }
+
+    header .header-menu ul li.with-icon a {
+        padding-left: 1.2307692308em;
+        padding-right: 1.2307692308em
+    }
+
+    header .header-menu ul li.with-icon i.icon {
+        font-size: 0.6153846154em;
+        padding-left: 0.5384615385em
+    }
+
+    header .header-menu ul li.with-icon.large-icon i.icon {
+        position: relative;
+        top: 3px;
+        font-weight: 300;
+        font-size: 1.2307692308em;
+        line-height: 0.8125em
+    }
+
+    header .header-menu ul li.with-img {
+        position: relative
+    }
+
+    header .header-menu ul li.with-img a {
+        padding-right: 3.6923076923em
+    }
+
+    header .header-menu ul li.with-img img {
+        display: inline-block;
+        width: 2.4615384615em;
+        height: 2.4615384615em;
+        margin-left: 0.6153846154em;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%)
+    }
+
+    @media (min-width: 1190px) {
+        header ul li.more {
+            display: none
+        }
+    }
+
+    @media (min-width: 1395px) {
+        header ul li.new-btn {
+            display: none
+        }
+    }
+
+    @media (max-width: 1395px) {
+        header ul li.hide-span-icon a span, header ul li.hide-span-cart a span, header ul li.hide-span-search a span {
+            display: none
+        }
+
+        header ul li.new-btn {
+            display: none
+        }
+    }
+
+    @media (max-width: 1190px) {
+        header ul li.hide-first {
+            display: none
+        }
+
+        header ul li.more {
+            display: block
+        }
+    }
+
+    @media (max-width: 1032px) {
+        header ul li.hide-second {
+            display: none
+        }
+    }
+
+    @media (max-width: 930px) {
+        header ul li.hide-third {
+            display: none
+        }
+    }
+
+    @media (max-width: 859px) {
+        header {
+            height: 54px;
+            border-bottom: 1px solid #e6e6e6
+        }
+
+        header ul li.hide-span-microsoft {
+            display: none
+        }
+
+        header ul li.hide-span-computers {
+            display: none
+        }
+
+        header ul li.active {
+            display: none
+        }
+
+        header .header-wrapper-left-side .header-logo:after {
+            display: none
+        }
+
+        header .header-logo {
+            position: absolute !important;
+            left: calc(100% - 50% - 54px);
+            top: 0
+        }
+
+        header ul li.hide-span-search {
+            position: absolute !important;
+            top: 0;
+            left: 48px
+        }
+
+        header ul li.hide-span-icon {
+            position: absolute !important;
+            top: 8px;
+            right: 0
+        }
+
+        header ul li.hide-span-cart {
+            position: absolute !important;
+            top: 0;
+            right: 48px
+        }
+
+        header ul li.new-btn {
+            display: block;
+            position: absolute !important;
+            top: 0;
+            left: 0
+        }
+
+        header ul li.more {
+            display: none
+        }
+    }
+
+    .icon {
+        font-family: "MWF-MDL2";
+        display: inline-block;
+        font-weight: 700;
+        vertical-align: center;
+        font-style: normal
+    }
+
+    .icon.dropdown:before {
+        content: ""
+    }
+
+    .icon.search:before {
+        content: ""
+    }
+
+    .icon.cart:before {
+        content: ""
+    }
+
+    .icon.new-btn-icon:before {
+        content: "";
+        font-size: 20px;
+        padding: 16px
+    }
+
+    @font-face {
+        font-family: "SegoeUI";
+        src: local("Segoe UI"), url("//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2") format("woff2"), url("//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff") format("woff"), url("//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf") format("ttf");
+        font-weight: 400
+    }
+
+    @font-face {
+        font-family: "SegoeUI";
+        src: local("Segoe UI"), url("//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Light/latest.woff2") format("woff2"), url("//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Light/latest.woff") format("woff"), url("//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Light/latest.ttf") format("ttf");
+        font-weight: 100
+    }
+
+    @font-face {
+        font-family: "SegoeUI";
+        src: local("Segoe UI"), url("//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semilight/latest.woff2") format("woff2"), url("//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semilight/latest.woff") format("woff"), url("//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semilight/latest.ttf") format("ttf");
+        font-weight: 200
+    }
+
+    @font-face {
+        font-family: "SegoeUI";
+        src: local("Segoe UI"), url("//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semibold/latest.woff2") format("woff2"), url("//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semibold/latest.woff") format("woff"), url("//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semibold/latest.ttf") format("ttf");
+        font-weight: 600
+    }
+
+    @font-face {
+        font-family: "SegoeUI";
+        src: local("Segoe UI"), url("//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Bold/latest.woff2") format("woff2"), url("//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Bold/latest.woff") format("woff"), url("//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Bold/latest.ttf") format("ttf");
+        font-weight: 600
+    }
+
+    body {
+        padding: 0;
+        font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif
+    }</style>
+</head>
+<body>
+<header>
+    <div class="header-content-wrapper">
+        <div class="header-wrapper-left-side">
+            <div class="header-logo"><a href="#"><img
+                    src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"
+                    alt=""/></a></div>
+            <div class="header-menu">
+                <ul>
+                    <li class="new-btn"><a href="#"><i class="icon new-btn-icon"></i></a></li>
+                    <li class="active"><a href="#"><span>Surface</span></a></li>
+                    <li class="with-icon hide-span-computers"><a href="#"><span>Computers</span> <i
+                            class="icon dropdown"></i></a></li>
+                    <li class="with-icon hide-third"><a href="#"><span>Computers for Business</span> <i
+                            class="icon dropdown"></i></a></li>
+                    <li class="with-icon hide-second"><a href="#"><span>Accessories</span> <i class="icon dropdown"></i></a>
+                    </li>
+                    <li class="with-icon hide-first"><a href="#"><span>Shop now</span> <i class="icon dropdown"></i></a>
+                    </li>
+                    <li class="hide-first"><a href="#"><span>Support</span></a></li>
+                    <li class="with-icon more"><a href="#"><span>More</span> <i class="icon dropdown"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-wrapper-right-side">
+            <div class="header-menu">
+                <ul>
+                    <li class="with-icon hide-span-microsoft"><a href="#"><span>All Microsoft</span> <i
+                            class="icon dropdown"></i></a></li>
+                    <li class="with-icon large-icon hide-span-search"><a href="#"><span>Search</span> <i
+                            class="icon search"></i></a></li>
+                    <li class="with-icon large-icon hide-span-cart"><a href="#"><span>Cart</span> <i
+                            class="icon cart"></i></a></li>
+                    <li class="with-img hide-span-icon"><a href="#"><span>Sign in</span> <img
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA2NCA2NCcgc3Ryb2tlPScjNzA3MDcwJz48ZyBjbGFzcz0nbWVjdHJsX3N0cm9rZScgc3Ryb2tlLXdpZHRoPScxLjknIGZpbGw9J25vbmUnPjxjaXJjbGUgY3g9JzMyJyBjeT0nMzInIHI9JzMwLjI1Jy8+PGcgdHJhbnNmb3JtPSdtYXRyaXgoMS4xIDAgMCAxLjEgOC44IDUuNjEpJz48Y2lyY2xlIGNsYXNzPSdtZWN0cmxfc3Ryb2tlJyBjeD0nMjAnIGN5PScxNicgcj0nNycvPjxwYXRoIGNsYXNzPSdtZWN0cmxfc3Ryb2tlJyBkPSdNMzAgMzVoMTBtLTUtNXYxME0zMC44MzMgMzIuMDlBMTEgMTEgMCAwMDkgMzQnLz48L2c+PC9nPjwvc3ZnPg=="
+                            alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+</body>
+</html>
